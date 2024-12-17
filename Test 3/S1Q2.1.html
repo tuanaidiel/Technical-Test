@@ -1,0 +1,9 @@
+<script>
+    function confirmExit(event) {
+        const confirmation = confirm("You are now leaving the page, do you confirm?");
+        if (!confirmation) {
+            event.preventDefault(); 
+        }
+    }
+</script>
+<a href="https://www.google.com" onclick="confirmExit(event)">Google Good!</a>
